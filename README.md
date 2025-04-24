@@ -151,5 +151,15 @@ Each component represents a latent **semantic axis** learned from TF-IDF pattern
   - Exploratory analysis
   - Visualization
 
+## Pause for analysis
+- We performed analysis to see what sort of cases are giving our best LinearSVC model issues
+- Two key findings:
+  - 1) Many labels were incorrect in the ground truth, and these amounted for many error
+    - We could go through and work out what percent of errors are of this sort
+  - 2) Many categories have ambiguous boundaries, which accounts for many more errors
+    - As suggested by the confusion matrix, Lifestyle and Entertainment, Music & Art, Geography & History are key culprits
+- This suggests there may not be as much room for improvement from transformer-based models as the 85% accuracy initially suggests
+  - Though this is the natural next step of the exercise in any case
+
 ## Next Steps
 - Work on transformer-based embeddings to see if we can improve performance pass LinearSVC
