@@ -1,0 +1,51 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data artifacts
+*.csv
+*.json
+data_preparation/cleaned_data.*
+
+# Model artifacts (intermediate)
+*.joblib
+*.pkl
+*.model
+*.h5
+*.png
+
+# Experiment tracking
+mlruns/
+
+# Logs
+*.log
+logs/
+
+# IDE configs
+.vscode/
+.idea/
+*.swo
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ✅ Allow specific shared files (not everything)
+!data_preparation/cleaned_data.csv
+!data_preparation/label_encoder.joblib
+!reports/model_benchmark_results.csv
+!reports/dim_reduction/svd_component_plot.png

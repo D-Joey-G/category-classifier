@@ -1,0 +1,18 @@
+Model: SVM_Linear
+Vectorizer: tfidf
+Features: 50000
+
+                    precision    recall  f1-score   support
+
+Art and Literature       0.82      0.84      0.83      1150
+     Entertainment       0.87      0.89      0.88      1153
+         Geography       0.79      0.79      0.79       891
+           History       0.82      0.80      0.81       962
+         Lifestyle       0.78      0.74      0.76       714
+             Music       0.85      0.86      0.86       743
+Science and Nature       0.89      0.87      0.88       837
+             Sport       0.93      0.94      0.93       889
+
+          accuracy                           0.85      7339
+         macro avg       0.84      0.84      0.84      7339
+      weighted avg       0.84      0.85      0.85      7339

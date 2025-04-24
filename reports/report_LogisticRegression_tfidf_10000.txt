@@ -1,0 +1,18 @@
+Model: LogisticRegression
+Vectorizer: tfidf
+Features: 10000
+
+                    precision    recall  f1-score   support
+
+Art and Literature       0.79      0.83      0.81      1150
+     Entertainment       0.85      0.88      0.86      1153
+         Geography       0.77      0.78      0.78       891
+           History       0.80      0.79      0.79       962
+         Lifestyle       0.77      0.69      0.73       714
+             Music       0.85      0.83      0.84       743
+Science and Nature       0.84      0.87      0.85       837
+             Sport       0.93      0.91      0.92       889
+
+          accuracy                           0.83      7339
+         macro avg       0.83      0.82      0.82      7339
+      weighted avg       0.83      0.83      0.83      7339

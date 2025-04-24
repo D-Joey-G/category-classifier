@@ -1,0 +1,18 @@
+TruncatedSVD components: 500
+Test Accuracy: 0.7992
+Test F1 Score: 0.7975
+
+                    precision    recall  f1-score   support
+
+Art and Literature       0.78      0.78      0.78      1150
+     Entertainment       0.83      0.86      0.85      1153
+         Geography       0.73      0.75      0.74       891
+           History       0.76      0.74      0.75       962
+         Lifestyle       0.75      0.60      0.67       714
+             Music       0.82      0.83      0.83       743
+Science and Nature       0.79      0.86      0.82       837
+             Sport       0.90      0.92      0.91       889
+
+          accuracy                           0.80      7339
+         macro avg       0.80      0.79      0.79      7339
+      weighted avg       0.80      0.80      0.80      7339

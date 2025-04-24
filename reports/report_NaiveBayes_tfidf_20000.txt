@@ -1,0 +1,18 @@
+Model: NaiveBayes
+Vectorizer: tfidf
+Features: 20000
+
+                    precision    recall  f1-score   support
+
+Art and Literature       0.77      0.84      0.81      1150
+     Entertainment       0.78      0.91      0.84      1153
+         Geography       0.76      0.77      0.76       891
+           History       0.81      0.78      0.79       962
+         Lifestyle       0.84      0.61      0.70       714
+             Music       0.87      0.77      0.82       743
+Science and Nature       0.84      0.86      0.85       837
+             Sport       0.92      0.91      0.92       889
+
+          accuracy                           0.82      7339
+         macro avg       0.82      0.81      0.81      7339
+      weighted avg       0.82      0.82      0.81      7339
