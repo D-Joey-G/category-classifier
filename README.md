@@ -161,5 +161,13 @@ Each component represents a latent **semantic axis** learned from TF-IDF pattern
 - This suggests there may not be as much room for improvement from transformer-based models as the 85% accuracy initially suggests
   - Though this is the natural next step of the exercise in any case
 
+---
+
+## Data Cleaning
+- In light of the above analysis, have decided to engage in some data cleaning.
+- Added a Streamlit tool to efficiently go through the questions where model has highly confident incorrect predictions
+- Relabels are saved in a corrected_labels.csv
+  - Will re-incorporate into a new_cleaned_data set in future and re-run model to see if this impacts performance
+
 ## Next Steps
 - Work on transformer-based embeddings to see if we can improve performance pass LinearSVC
