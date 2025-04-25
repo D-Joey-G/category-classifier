@@ -50,3 +50,4 @@ Thumbs.db
 !reports/model_benchmark_results.csv
 !reports/dim_reduction/svd_component_plot.png
 !reports/label_review/suspected_label_errors.csv
+!reports/label_review/corrected_labels.csv
