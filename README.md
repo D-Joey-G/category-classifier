@@ -180,6 +180,6 @@ Each component represents a latent **semantic axis** learned from TF-IDF pattern
 - A more thorough analysis can be found in utils/comparison_llm_v_model.ipynb, but we will sketch the outlines below
   - Claude Sonnet 3.5 disagreed with the True label 61.9% of the time in this filtered set
     - In cases where True != Claude label, Claude == Predicted label 75% of the time
-    - If we say that Claude is always right when is disagrees with True or Predicted, then we could still add up to 516 to correct predictions by our LinearSVC movel
+    - If we say that Claude is always right when is disagrees with True or Predicted, then this alone would 516 correct predictions by our LinearSVC movel (1.3% improvement)
   - At high confidences, most disagreements with Claude and human labelling appear to be edge cases
   - Thus, we can surmise that "real" accuracy of our best model is well in excess of the 85% given by comparison with "True" labels
