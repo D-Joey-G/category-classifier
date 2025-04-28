@@ -169,10 +169,6 @@ Each component represents a latent **semantic axis** learned from TF-IDF pattern
 - Relabels are saved in a corrected_labels.csv
   - Will re-incorporate into a new_cleaned_data set in future and re-run model to see if this impacts performance
 
-## Next Steps
-- Work on transformer-based embeddings to see if we can improve performance pass LinearSVC
-
-
 ---
 
 ## Data Investigation
@@ -183,3 +179,17 @@ Each component represents a latent **semantic axis** learned from TF-IDF pattern
     - If we say that Claude is always right when is disagrees with True or Predicted, then this alone would 516 correct predictions by our LinearSVC movel (1.3% improvement)
   - At high confidences, most disagreements with Claude and human labelling appear to be edge cases
   - Thus, we can surmise that "real" accuracy of our best model is well in excess of the 85% given by comparison with "True" labels
+ 
+---
+
+## Next Steps
+- Work on transformer-based embeddings to see if we can improve performance beyond LinearSVC
+- To improve current model, we could apply active learning as below:
+    - Run predictions on unlabeled data with confidence scores
+    - Sort examples by uncertainty 
+    - Human labeling of most uncertain example
+    - Add newly labeled examples to training data and retrain
+    - Iterate
+
+
+
