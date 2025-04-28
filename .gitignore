@@ -11,6 +11,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Environment variables
+.env
+
 # Jupyter
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
@@ -51,3 +54,4 @@ Thumbs.db
 !reports/dim_reduction/svd_component_plot.png
 !reports/label_review/suspected_label_errors.csv
 !reports/label_review/corrected_labels.csv
+!reports/label_review/claude_labels.csv

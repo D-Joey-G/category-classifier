@@ -171,3 +171,15 @@ Each component represents a latent **semantic axis** learned from TF-IDF pattern
 
 ## Next Steps
 - Work on transformer-based embeddings to see if we can improve performance pass LinearSVC
+
+
+---
+
+## Data Investigation
+- Added script (relabel_llm.py) to get labels from Claude 3.5 for the filtered suspected_label_errors.csv subset
+- A more thorough analysis can be found in utils/comparison_llm_v_model.ipynb, but we will sketch the outlines below
+  - Claude Sonnet 3.5 disagreed with the True label 61.9% of the time in this filtered set
+    - In cases where True != Claude label, Claude == Predicted label 75% of the time
+    - If we say that Claude is always right when is disagrees with True or Predicted, then we could still add up to 516 to correct predictions by our LinearSVC movel
+  - At high confidences, most disagreements with Claude and human labelling appear to be edge cases
+  - Thus, we can surmise that "real" accuracy of our best model is well in excess of the 85% given by comparison with "True" labels
